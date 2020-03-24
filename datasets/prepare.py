@@ -4,7 +4,7 @@ content = file.read()
 
 file.seek(0)
 
-file.write(content.replace('.\n', ';\n').replace('.', ';'))
+file.write(content.replace(';\n', '.\n'))
 
 file.truncate()
 
